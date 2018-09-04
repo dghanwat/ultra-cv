@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/frontend-theme/css/animate.css";
+@import "assets/frontend-theme/css/bootstrap.min.css";
+@import "assets/frontend-theme/css/bootstrap-switch.css";
+@import "assets/frontend-theme/css/custom.css";
+@import "assets/frontend-theme/css/font-awesome.min.css";
+@import "assets/frontend-theme/css/font-entypo.css";
+@import "assets/frontend-theme/css/fonts.css";
+@import "assets/frontend-theme/css/isotope.css";
+@import "assets/frontend-theme/css/theme.min.css";
+@import "assets/frontend-theme/css/theme-responsive.min.css";
+
+.vd-bg-color-light-green {
+  background: #00bd9c !important;
+}

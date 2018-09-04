@@ -1,0 +1,190 @@
+.brand-page section.header {
+    padding-top: 40px;
+    padding-bottom: 160px;
+    color: #fff;
+    text-align: center;
+    background-color: #f2faf8;
+    background-image: url(/assets/frontend-theme/images/hero-1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.brand-page section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.brand-page section.header.tight-bottom {
+    padding-bottom: 0;
+}
+
+.brand-page section.header:before {
+    content: "";
+    background: #00bd9c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+    z-index: 0;
+}
+
+
+@media (min-width: 767px) {
+    .brand-page section.header .hero {
+        font-size: 49px;
+    }
+}
+.brand-page section.header .hero {
+    font-size: 40px;
+    margin: 120px auto 60px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 2px 2px rgba(39,53,63,.2);
+}
+
+.brand-page .button.large, .brand-page button.large {
+    font-size: 18px;
+    padding: 15px 30px;
+    opacity: 1;
+}
+.button.ghost.white, button.ghost.white {
+    border-color: #fff;
+    color: #fff;
+}
+.button.ghost, button.ghost {
+    border: 2px solid #00bd9c;
+    background: 0 0;
+    color: #00bd9c;
+}
+.button.inline, button.inline {
+    display: inline-block;
+    width: auto;
+}
+
+.button, button {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: rgba(39,53,63,.5);
+    color: #fff;
+    opacity: .75;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 13px 25px;
+}
+
+.brand-page section.header .section-line {
+    height: 120px;
+    bottom: 0;
+}
+.brand-page section .section-line {
+    width: 1px;
+    border: 1px dashed #fff;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+
+.brand-page section.header>* {
+    z-index: 1;
+    position: relative;
+}
+.brand-page .container {
+    max-width: 970px;
+}
+
+.brand-page section.header .brand-companies {
+    padding: 15px 0;
+    margin-top: 150px;
+}
+
+.brand-page section.header .section-line a {
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 3px 5px;
+    margin: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    -webkit-transform: translate(-50%,0%);
+    transform: translate(-50%,0%);
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+}
+
+.brand-page #how .how-title .arrow.left {
+    left: 0;
+}
+.brand-page #how .how-title .arrow {
+    position: absolute;
+    top: 20px;
+    width: 83px;
+}
+
+.brand-page #how .how-title .arrow.right {
+    right: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.brand-page #how .how-title .arrow {
+    position: absolute;
+    top: 20px;
+    width: 83px;
+}
+
+.brand-page #how .how-title h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.brand-page #how .how-title {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.brand-page #how .how-images.visible .how-image {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+/* .brand-page #how .how-images .how-image.profile {
+    -webkit-transform: translate(0,50px) rotateX(20deg);
+    transform: translate(0,50px) rotateX(20deg);
+} */
+.brand-page #how .how-images .how-image {
+    opacity: 0;
+    -webkit-transition: all .7s cubic-bezier(.175,.885,.32,1.275);
+    transition: all .7s cubic-bezier(.175,.885,.32,1.275);
+}
+.brand-page #how .how-image.profile {
+    text-align: left;
+    padding-top: 25px;
+    /* margin-left: -50px; */
+}
+.brand-page #how .how-image {
+    padding-top: 30px;
+}
+
+/* .brand-page #how .how-images .how-image.resume {
+    -webkit-transform: translate(-50px,0);
+    transform: translate(-50px,0);
+} */
+
+.brand-page #how .how-image.resume {
+    text-align: right;
+}
+.brand-page #how .how-image {
+    padding-top: 30px;
+}
+
