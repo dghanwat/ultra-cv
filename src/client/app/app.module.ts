@@ -11,6 +11,8 @@ import { AuthGuardAdmin } from './services/auth-guard-admin.service';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { Layout1Component } from './templates/layout-1/layout1.component';
+import { Layout2Component } from './templates/layout-2/layout2.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -20,7 +22,9 @@ export function tokenGetter() {
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    Layout1Component,
+    Layout2Component
   ],
   imports: [
     RoutingModule,
