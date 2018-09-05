@@ -12,8 +12,8 @@ import { AuthGuardAdmin } from './services/auth-guard-admin.service';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'template1', component: Layout1Component ,canActivate: [AuthGuardLogin]},
-  { path: 'template2', component: Layout2Component ,canActivate: [AuthGuardLogin]},
+  { path: 'template1', component: Layout1Component},
+  { path: 'template2', component: Layout2Component },
   // { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
   { path: 'notfound', component: NotFoundComponent },
   { path: '**', redirectTo: '/notfound' },

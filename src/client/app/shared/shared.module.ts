@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ToastComponent } from './toast/toast.component';
 import { LoadingComponent } from './loading/loading.component';
+import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 
 @NgModule({
   imports: [
@@ -21,14 +22,17 @@ import { LoadingComponent } from './loading/loading.component';
     HttpClientModule,
     // Shared Components
     ToastComponent,
-    LoadingComponent
+    LoadingComponent,
+    TopNavigationComponent
   ],
   declarations: [
     ToastComponent,
-    LoadingComponent
+    LoadingComponent,
+    TopNavigationComponent
   ],
   providers: [
-    ToastComponent
+    ToastComponent,
+    TopNavigationComponent
   ]
 })
 export class SharedModule { }
