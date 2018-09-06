@@ -1,0 +1,67 @@
+@media (min-width: 768px) {
+.nav-justified>li {
+    width: 9% !important;
+}
+}
+
+.flex {
+    display: flex; /* Make products flex in row direction (default) */
+    flex-wrap: wrap; /* Make products overflow on new row */
+    justify-content: center; /* Or space-between or space-around */
+  }
+  
+  .flex > section {
+    flex: 1 1 0; /* Prevent the extra space around content */
+    text-align: center; /* Align text on center */
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Display flex in column */
+    align-items: center; /* Align items on center */
+    max-width: 400px; /* Set max-width so the last items will behave in a more traditional way */
+    margin-right: 10px;
+  }
+  
+  .flex > section > p {
+    flex-grow: 1; /* Keep p's same size */
+  }
+  
+  ul {
+    display: flex; /* Display specs in flex-row */
+    justify-content: space-between; /* Specs to start and end of row */
+  }
+
+.macbook {
+    position: relative;
+    width: 120%;
+}
+
+.macbook .screen {
+    position: absolute;
+    top: -1px;
+    left: 5.5%;
+    right: 12%;
+    bottom: 20px;
+    overflow-y: scroll;
+}
+.macbook .screen>img {
+    display: inline-block;
+    max-width: 47% !important;
+}
+
+.profile {
+    text-align: left;
+    padding-top: 25px;
+    margin-left: -50px;
+}
+
+.macbook>img {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    max-width: 46% !important;
+}
+
+#mydiv {
+    overflow: auto;
+    max-width: 400px;
+    max-height: 200px;
+}

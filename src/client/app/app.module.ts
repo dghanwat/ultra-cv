@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { Layout1Component } from './templates/layout-1/layout1.component';
 import { Layout2Component } from './templates/layout-2/layout2.component';
+import { CreateCVComponent } from './cvmanagement/createcv.component';
+import { NgSlimScrollModule, SLIMSCROLL_DEFAULTS } from 'ngx-slimscroll';
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -23,11 +26,13 @@ export function tokenGetter() {
     HomeComponent,
     NotFoundComponent,
     Layout1Component,
-    Layout2Component
+    Layout2Component,
+    CreateCVComponent
   ],
   imports: [
     RoutingModule,
     SharedModule,
+    NgSlimScrollModule,
     JwtModule.forRoot({ 
       config: {
         tokenGetter: tokenGetter,

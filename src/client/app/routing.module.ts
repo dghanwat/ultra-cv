@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { Layout1Component } from './templates/layout-1/layout1.component';
 import { Layout2Component } from './templates/layout-2/layout2.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CreateCVComponent } from './cvmanagement/createcv.component';
 
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'template1', component: Layout1Component},
   { path: 'template2', component: Layout2Component },
+  { path: 'createcv', component: CreateCVComponent },
   // { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
   { path: 'notfound', component: NotFoundComponent },
   { path: '**', redirectTo: '/notfound' },
