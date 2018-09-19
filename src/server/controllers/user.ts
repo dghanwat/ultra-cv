@@ -3,10 +3,12 @@ import * as jwt from 'jsonwebtoken';
 
 import User from '../models/user';
 import BaseCtrl from './base';
+import * as profile from './../models/sample_user_profile';
+
 
 export default class UserCtrl extends BaseCtrl {
   model = User;
-
+  
   login = (req, res) => {
     this.model.findOne({ email: req.body.email }, (err, user) => {
       if (!user) { return res.sendStatus(403); }
@@ -16,6 +18,10 @@ export default class UserCtrl extends BaseCtrl {
         res.status(200).json({ token: token });
       });
     });
+  }
+
+  getUserProfile = (req,res) => {
+    res.status(200).json(profile.profile)
   }
 
 }

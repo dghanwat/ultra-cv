@@ -1,0 +1,238 @@
+<app-ui-top-navigation></app-ui-top-navigation>
+<div class="vd_content-section clearfix">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel widget">
+                <div class="panel-heading vd_bg-grey">
+                    <h3 class="panel-title"> <span class="menu-icon"> <i class="fa fa-magic"></i> </span>
+                        Profile Details </h3>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal" action="#" role="form">
+                        <div id="wizard-2" class="form-wizard">
+                            <ul class="nav nav-pills nav-justified">
+                                <li [ngClass]="[activeTab == 1 ? 'active' : '']">
+                                    <a href="#tab21" data-toggle="tab">
+                                        <div class="menu-icon"> 1 </div>
+                                        Template </a></li>
+                                <li [ngClass]="[activeTab == 2 ? 'active' : '']"><a href="#tab22" data-toggle="tab">
+                                        <div class="menu-icon"> 2 </div>
+                                        Profile </a></li>
+                                <li [ngClass]="[activeTab == 3 ? 'active' : '']"><a href="#tab23" data-toggle="tab">
+                                        <div class="menu-icon"> 3 </div>
+                                        Work History </a></li>
+                                <li [ngClass]="[activeTab == 4 ? 'active' : '']"><a href="#tab24" data-toggle="tab">
+                                        <div class="menu-icon"> 4 </div>
+                                        Education History </a></li>
+                                <li [ngClass]="[activeTab == 5 ? 'active' : '']">
+                                    <a href="#tab25" data-toggle="tab">
+                                        <div class="menu-icon"> 5 </div>
+                                        Skills
+                                    </a>
+                                </li>
+                                <li [ngClass]="[activeTab == 6 ? 'active' : '']">
+                                    <a href="#tab25" data-toggle="tab">
+                                        <div class="menu-icon"> 6 </div>
+                                        References
+                                    </a>
+                                </li>
+                                <li [ngClass]="[activeTab == 7 ? 'active' : '']">
+                                    <a href="#tab25" data-toggle="tab">
+                                        <div class="menu-icon"> 7 </div>
+                                        Interests
+                                    </a>
+                                </li>
+                                <li [ngClass]="[activeTab == 8 ? 'active' : '']"><a href="#tab25" data-toggle="tab">
+                                        <div class="menu-icon"> 8 </div>
+                                        Confirm </a></li>
+                            </ul>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-info" [ngStyle]="{'width':progressBarPercentage}"> </div>
+                            </div>
+                            <div class="tab-content no-bd pd-25">
+                                <div class="tab-pane active" id="tab21">
+                                    <div id='mydiv'>
+                                        <img src='/assets/frontend-theme/images/template1.png' />
+                                    </div>
+                                    <div class="tab-pane active" id="tab21">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">First Name</label>
+                                            <div class="col-sm-3 controls">
+                                                <input type="text" class="input-border-btm">
+                                            </div>
+                                            <label class="col-sm-2 control-label">Last Name</label>
+                                            <div class="col-sm-3 controls">
+                                                <input type="text" class="input-border-btm">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">User Name</label>
+                                            <div class="col-sm-3 controls">
+                                                <input type="text" class="input-border-btm">
+                                            </div>
+                                            <label class="col-sm-2 control-label">Email</label>
+                                            <div class="col-sm-3 controls">
+                                                <input type="text" class="input-border-btm">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Password</label>
+                                            <div class="col-sm-3 controls">
+                                                <input type="password" class="input-border-btm">
+                                            </div>
+                                            <label class="col-sm-2 control-label">Confirm Password</label>
+                                            <div class="col-sm-3 controls">
+                                                <input type="password" class="input-border-btm">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="tab22">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Address</label>
+                                        <div class="col-sm-7 controls">
+                                            <input type="text" class="input-border-btm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">City</label>
+                                        <div class="col-sm-7 controls">
+                                            <input type="text" class="input-border-btm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Country</label>
+                                        <div class="col-sm-2 controls">
+                                            <select class="input-border-btm">
+                                                <option>USA</option>
+                                                <option>Canada</option>
+                                                <option>UK</option>
+                                                <option>Thailand</option>
+                                                <option>Indonesia</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Post Code</label>
+                                        <div class="col-sm-1 controls">
+                                            <input type="text" class="input-border-btm" maxlength="5">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab23">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Homephone</label>
+                                        <div class="col-sm-10 controls">
+                                            <select class="width-10  input-border-bottom">
+                                                <option>+1</option>
+                                                <option>+60</option>
+                                                <option>+61</option>
+                                                <option>+62</option>
+                                                <option>+63</option>
+                                            </select>
+                                            <input type="text" class="width-30  input-border-btm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Handphone</label>
+                                        <div class="col-sm-10 controls">
+                                            <select class="width-10  input-border-bottom">
+                                                <option>+1</option>
+                                                <option>+60</option>
+                                                <option>+61</option>
+                                                <option>+62</option>
+                                                <option>+63</option>
+                                            </select>
+                                            <input type="text" class="width-30  input-border-btm">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab24">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Credit Card Number</label>
+                                        <div class="col-sm-5 controls">
+                                            <input type="text" class="input-border-btm">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">CVV</label>
+                                        <div class="col-sm-10 controls">
+                                            <input type="text" class="width-10  input-border-btm" maxlength="3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Expired Date</label>
+                                        <div class="col-sm-10 controls">
+                                            <select class="width-20  input-border-btm">
+                                                <option>January</option>
+                                                <option>February</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                            </select>
+                                            <select class="width-10  input-border-btm">
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                                <option>2017</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab25">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">First Name</label>
+                                        <div class="col-sm-5 controls">
+                                            <div class="control-value"> John </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Last Name</label>
+                                        <div class="col-sm-10 controls">
+                                            <div class="control-value"> Doe </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Address</label>
+                                        <div class="col-sm-10 controls">
+                                            <div class="control-value"> Address Examples Here </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">City</label>
+                                        <div class="col-sm-10 controls">
+                                            <div class="control-value"> Los Angeles </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Country</label>
+                                        <div class="col-sm-10 controls">
+                                            <div class="control-value"> USA </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-actions wizard mgtp-20">
+                                    <div class="row mgbt-xs-0">
+                                        <div class="col-xs-6"> <a class="btn vd_btn prev" (click)="navPreviousTab()"><span
+                                                    class="menu-icon"><i class="fa fa-fw fa-chevron-circle-left"></i></span>
+                                                Previous</a> </div>
+                                        <div class="col-xs-6 text-right"> <a class="btn vd_btn next" (click)="navNextTab()">Next
+                                                <span class="menu-icon"><i class="fa fa-fw fa-chevron-circle-right"></i>
+                                                </span></a>
+                                            <a class="btn vd_btn vd_bg-green finish" href="javascript:void(0);" style="display: none;">
+                                                <span class="menu-icon"><i class="fa fa-fw fa-check"></i></span> Finish</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Panel Widget -->
+        </div>
+        <!-- col-md-12 -->
+    </div>
+</div>

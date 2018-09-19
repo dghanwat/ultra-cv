@@ -1,0 +1,4 @@
+<div *ngIf="userProfile">
+    <app-template-cooldude [userProfile]="userProfile" *ngIf="userProfile.theme.name === 'cooldude'"></app-template-cooldude>
+    <app-template-abigail [userProfile]="userProfile" *ngIf="userProfile.theme.name === 'abigail'"></app-template-abigail>
+</div>

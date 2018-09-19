@@ -1,0 +1,733 @@
+@charset "utf-8";
+
+/**
+*
+* -------------------------------------------------
+*
+* Template : Clean Resume/CV HTML5 Template
+* Author : thecodude
+* Author URI : http://thecodrops.com
+*
+* --------------------------------------------------
+*
+**/
+
+/* Table Of Content
+-----------------------------------------------------
+01. Common Styles
+02. Global classes
+03. Uikit overide
+04. About
+05. Introduction
+06. Profile
+07. Work
+08. Recent Job
+09. Skills
+11. Education
+12. Hobbies
+13. Footer
+14. Black Version
+15. Responsive Media
+-----------------------------------------------------
+*/
+
+/*-----------------------------------
+    01. Common Styles              
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif !important;
+}
+p {
+    color: #797979;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 15px;
+}
+.clr {
+    clear: both
+}
+section {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*-------------------------
+    02. Global classes
+---------------------------*/
+.sec-color {
+    background-color: #f9f9f9;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-black {
+    background-color: #1a1a1a;
+}
+.bg-blue {
+    background-color: #344860;
+}
+.bg-white-transparent {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+.bg-gray {
+    background-color: #f3f3f3;
+}
+/* .bg1 {
+    background-image: url(../images/bg1.png);
+} */
+.white-color {
+    color: white !important;
+}
+.bg-fixed {
+    background-attachment: fixed;
+}
+.sec-spacer {
+    padding: 35px 0;
+}
+.spacer1 {
+    height: 20px;
+}
+.spacer2 {
+    height: 45px;
+}
+.spacer3 {
+    height: 60px;
+}
+.spacer4 {
+    height: 80px;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.mt10 {
+    margin-top: 10px !important;
+}
+.mt15 {
+    margin-top: 15px !important;
+}
+.mt20 {
+    margin-top: 20px !important;
+}
+.mt25 {
+    margin-top: 25px !important;
+}
+.mt30 {
+    margin-top: 30px !important;
+}
+.mt45 {
+    margin-top: 45px !important;
+}
+.mt60 {
+    margin-top: 60px !important;
+}
+.mt80 {
+    margin-top: 80px !important;
+}
+.mt100 {
+    margin-top: 100px !important;
+}
+.pt100 {
+    padding-top: 100px !important;
+}
+.pb100 {
+    padding-bottom: 100px !important;
+}
+.mb10 {
+    margin-bottom: 10px !important;
+}
+.mb15 {
+    margin-bottom: 15px !important;
+}
+.mb20 {
+    margin-bottom: 20px !important;
+}
+.mb25 {
+    margin-bottom: 25px !important;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.mb40 {
+    margin-bottom: 40px !important;
+}
+.mb45 {
+    margin-bottom: 45px !important;
+}
+.mb60 {
+    margin-bottom: 60px !important;
+}
+.mb80 {
+    margin-bottom: 80px !important;
+}
+.mb100 {
+    margin-bottom: 100px !important;
+}
+.scroll-bottom {
+    display: inline-block;
+    border: 1px solid #ddd;
+    height: 70px;
+    width: 70px;
+    font-size: 26px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+}
+.brb {
+    border-bottom: 1px solid #f5f5f5;
+}
+.title1 {
+    position: relative;
+}
+.title1 h3 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 1.2em;
+    position: relative;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.title1 h3:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 1px;
+    width: 20px;
+    background: #444;
+    top: 0;
+}
+.title1 span {
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 72px;
+    color: rgba(68, 68, 68, 0.1);
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+/*-------------------------
+    03. Uikit overide
+---------------------------*/
+.tc-dotnav>* {
+    padding-left: 10px;
+}
+.tc-dotnav>*>* {
+    width: 8px;
+    height: 8px;
+    border-radius: 6px;
+    -webkit-transition: all .3s cubic-bezier(0.76, 0.29, 0.77, 0.3);
+    transition: all .3s cubic-bezier(0.76, 0.29, 0.77, 0.3);
+}
+.tc-dotnav.tc-dotnav>*>:active,
+.tc-dotnav>.uk-active>* {
+    width: 30px;
+}
+.has-caption.uk-progress {
+    overflow: visible;
+    margin: 35px 0px;
+}
+.has-caption .uk-progress-bar {
+    position: relative;
+}
+.has-caption .uk-progress-bar > span {
+    position: absolute;
+    top: -24px;
+    color: #444;
+}
+.has-caption .uk-progress-bar > span.name {
+    left: 0;
+}
+.has-caption .uk-progress-bar > span.percent {
+    right: 0;
+}
+.uk-navbar-brand,
+.uk-navbar-content,
+.uk-navbar-toggle {
+    height: 80px;
+}
+.tc-accordion h3 {
+    padding: 12px 40px 12px 18px;
+    background: rgba(50, 50, 50, 0.1);
+}
+.uk-button {
+    border: 1px solid rgba(30, 30, 30, 0.04);
+}
+.uk-modal-dialog-lightbox .uk-modal-caption {
+    bottom: 0;
+    margin-bottom: 0;
+    background: rgba(26, 26, 26, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.uk-modal-dialog .uk-close {
+    color: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(255, 255, 255, 0.5);
+    top: 0 !important;
+    right: 0 !important;
+    border-radius: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.uk-slidenav-position {
+    overflow: hidden;
+}
+.uk-slidenav-position .uk-slidenav {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+}
+.uk-slidenav-position .uk-slidenav:hover:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+.uk-slidenav-position .uk-slidenav-next:before {
+    left: 3px;
+    position: relative;
+}
+
+/*-------------------------
+    04. About
+---------------------------*/
+.tc-about .resume-photo img {
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+.tc-about .rs-name h3 {
+    font-size: 42px;
+    line-height: 1;
+    font-weight: 300;
+}
+.tc-about .rs-title p {
+    font-size: 20px;
+    color: rgba(68, 68, 68, 0.73);
+}
+.tc-about .contact a {
+    color: #777;
+}
+.tc-about .rs-title {
+    position: relative;
+}
+.tc-about .rs-title:after {content: '';position: absolute;height: 1px;width: 80px;background: #222;top: 50%;left: -87px;}
+.tc-about  ul.contact {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    color: #777;
+}
+.tc-about  ul.contact li + li {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+.tc-about  ul.contact i {
+    margin-right: 8px;
+    color: #777;
+}
+
+/*--------------------------
+    05. Introduction
+---------------------------*/
+.tc-introduction .into-desc p {
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.73);
+}
+
+/*--------------------------
+    06. Profile
+---------------------------*/
+.tc-profile .profile-desc p {
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.73);
+}
+
+/*--------------------------
+    07. Work
+---------------------------*/
+.tc-work .work-item {
+    position: relative;
+    overflow: hidden;
+}
+.tc-work .work-item img {
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+.tc-work .work-item img:hover {
+    transform: scale(1.1);
+}
+.tc-work .work-item h3 {
+    position: absolute;
+    bottom: -20px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.tc-work .work-item:hover h3 {
+    bottom: 0px;
+    opacity: 1;
+}
+
+/*--------------------------
+    08. Recent Jobs
+---------------------------*/
+.tc-jobs .job-title h3 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.tc-jobs .job-desc p {
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.73);
+}
+.tc-jobs .job-date p {
+    margin-bottom: 5px;
+}
+.tc-jobs .job-company ul {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(68, 68, 68, 0.73);
+    padding-left: 16px;
+    list-style-type: circle;
+}
+.tc-jobs .job-company + .job-company {
+    margin-top: 45px;
+    padding-top: 45px;
+    border-top: 1px solid #f5f5f5;
+}
+
+/*--------------------------
+    09. Skills
+---------------------------*/
+.tc-skills .skill-desc p {
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.73);
+}
+.uk-progress-bar {
+    background: #777;
+}
+
+/*--------------------------
+    10. Education
+---------------------------*/
+.tc-education .edu-title h3 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.tc-education .edu-date p {
+    margin-bottom: 5px;
+}
+.tc-education .edu-desc p {
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.73);
+}
+.tc-education .education-item + .education-item {
+    margin-top: 45px;
+    padding-top: 45px;
+    border-top: 1px solid #f5f5f5;
+}
+
+/*--------------------------
+    11. Hobbies
+---------------------------*/
+.tc-hobbies .hobbies-inner {
+    padding-left: 0;
+}
+.tc-hobbies .hobbies-inner li {
+    display: inline-block;
+    margin: .5em;
+}
+.tc-hobbies .hobbies-inner li a {
+    display: block;
+    position: relative;
+}
+.tc-hobbies .hobbies-inner li a span {
+    position: absolute;
+    top: -38px;
+    left: 0;
+    padding: 9px 10px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    min-width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: top .25s cubic-bezier(0.25, 0.1, 0.66, 0.68), opacity .25s cubic-bezier(0.25, 0.1, 0.63, 0.6);
+    transition: top .25s cubic-bezier(0.25, 0.1, 0.66, 0.68), opacity .25s cubic-bezier(0.25, 0.1, 0.63, 0.6);
+}
+.tc-hobbies .hobbies-inner li a span:after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    border: 6px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.65);
+    bottom: -12px;
+}
+.tc-hobbies .hobbies-inner li a:hover span {
+    top: -46px;
+    opacity: 1;
+    visibility: visible;
+}
+.tc-hobbies .hobbies-inner li a i {
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    font-size: 34px;
+    text-align: center;
+    border-radius: 50%;
+    color: #999;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-transition: background-color .3s ease, color .1s ease-in-out;
+    transition: background-color .3s ease, color .1s ease-in-out;
+}
+.tc-hobbies .hobbies-inner li a i:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*--------------------------
+    12. Footer
+---------------------------*/
+.tc-footer {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 13px;
+}
+.tc-footer .copyright {
+    color: #999;
+}
+.tc-footer .tc-totopscroll {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.1);
+    color: #999;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.tc-footer .tc-totopscroll:hover {
+    background-color: #222;
+    color: #fff;
+}
+.tc-footer .tc-totopscroll i {
+    margin-left: 2px;
+    transition: all .3s ease;
+}
+.tc-footer .social-share {
+    list-style: none;
+}
+.tc-footer .social-share li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.tc-footer .social-share li a {
+    color: #999;
+    font-size: 16px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.tc-footer .social-share li a:hover {
+    color: #444;
+}
+
+/*--------------------------
+    13. Black Version
+---------------------------*/
+.black-version {
+    background-color: #232323; 
+}
+.black-version .sec-color {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+.black-version .tc-about .rs-title p, 
+.black-version .tc-about .rs-name h3, 
+.black-version .tc-about .contact a, 
+.black-version .tc-about  ul.contact i, 
+.black-version .tc-about  ul.contact, 
+.black-version .title1 h3, 
+.black-version .tc-introduction .into-desc p, 
+.black-version .tc-profile .profile-desc p, 
+.black-version .tc-jobs .job-desc p, 
+.black-version .tc-jobs .job-company ul, 
+.black-version .tc-jobs .job-title h3, 
+.black-version .tc-skills .skill-desc p, 
+.black-version .has-caption .uk-progress-bar > span, 
+.black-version .tc-education .edu-date p, 
+.black-version .tc-education .edu-title h3, 
+.black-version .tc-education .edu-desc p {
+    color: #bbb;
+}
+.black-version .title1 span {
+    color: rgba(255, 255, 255, 0.2);
+}
+.black-version .tc-about  ul.contact li + li, 
+.black-version .tc-jobs .job-company + .job-company, 
+.black-version .tc-education .education-item + .education-item {
+    border-top-color: rgba(255,255,255,0.1);
+}
+.black-version .title1 h3:after, 
+.black-version .uk-progress, 
+.black-version .tc-about .rs-title:after {
+    background: rgba(255,255,255,0.7);
+}
+
+/*-----------------------------
+    14. Responsive Media
+-------------------------------*/
+@media (max-width: 767px) {
+    .tc-footer {
+        font-size: 11px;
+    }
+    .tc-footer .tc-totopscroll {
+        left: auto;
+        right: 0;
+    }
+    .tc-slider {
+        zoom: 0.7;
+    }
+}
+@media (max-width: 420px) {
+    .tc-footer .tc-totopscroll {
+        top: 0;
+    }
+}
+.content-wrapper {
+    padding: 0px !important;
+}
+
+.awards-card {
+    background: #fff;
+    border-radius: 2px;
+    padding: 30px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03), 0 3px 1px -2px rgba(0, 0, 0, 0.03), 0 1px 5px 0 rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03), 0 3px 1px -2px rgba(0, 0, 0, 0.03), 0 1px 5px 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.03), 0 3px 1px -2px rgba(0, 0, 0, 0.03), 0 1px 5px 0 rgba(0, 0, 0, 0.03);
+}
+.text-center {
+    text-align: center;
+}
+
+.awards-card img {
+    display: block;
+    margin: 0 auto;
+    height: 120px;
+    border-radius: 50%;
+    width: 120px;
+}
+
+.awards-card img {
+    border-radius: 0!important;
+}
+
+.da-slide h4 {
+    color: #444;
+    font-size: 20px;
+    width: 55%;
+    top: 190px;
+    z-index: 10;
+    font-weight: 700;
+    text-align: right;
+    text-transform: capitalize;
+}
+.da-slide p::before {
+    position: relative;
+    content: "\f10d";
+    top: -5px;
+    left: -10px;
+    font-size: 24px;
+    font-family: fontawesome;
+}
+
+[class*="block-grid-"] {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+}
+
+.small-block-grid-2 li {
+    padding-bottom: 0;
+}
+.small-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+}
+.small-block-grid-2 > li:nth-of-type(1n) {
+    clear: none;
+}
+.small-block-grid-2 > li {
+    list-style: none;
+    width: 60%;
+}
+[class*="block-grid-"] > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 0.625rem 0.24rem;
+}
+.name {
+    color: #888888;
+    width: 40% !important
+}
+
+.small-block-grid-8 > li {
+    list-style: none;
+    width: 12.5%;
+}
+[class*="block-grid-"] > li {
+    display: block;
+    float: left;
+    height: auto;
+    padding: 0 0.625rem 0.24rem;
+}
+
+.ellipses li span {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    background: #D1D2D4 !important;
+    border-radius: 100%;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+.ellipses li span.grey {
+    background:  #58585A !important;
+}
